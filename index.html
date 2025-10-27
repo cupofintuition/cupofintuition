@@ -38,6 +38,7 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 2px solid #4f2800;
+            flex-wrap: wrap; /* allows nav to wrap on smaller screens */
         }
 
         /* Main logo as clickable home button */
@@ -55,6 +56,25 @@
         .long-logo img {
             max-width: 600px;
             height: auto;
+        }
+
+        /* Navigation menu */
+        nav {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            flex-basis: 100%; /* makes nav full width on smaller screens */
+        }
+
+        nav a {
+            font-weight: bold;
+            color: #4f2800;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         /* Sections */
@@ -121,7 +141,7 @@
 
     <!-- Header -->
     <header>
-        <!-- Corner/main logo as home button -->
+        <!-- Main logo as home button -->
         <div class="home-logo">
             <a href="index.html">
                 <img src="mainlogo.png" alt="Home">
@@ -132,12 +152,19 @@
         <div class="long-logo">
             <img src="longlogo.png" alt="Cup of Intuition">
         </div>
+
+        <!-- Navigation menu -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="https://cupofintuition.substack.com/" target="_blank">Blog</a>
+        </nav>
     </header>
 
     <!-- Tagline -->
     <section>
         <h1>A space for community, curiosity, and hand-crafted creations</h1>
-
     </section>
 
     <!-- About / Story -->
