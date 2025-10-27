@@ -26,29 +26,21 @@
             text-decoration: none;
         }
 
-        /* Header & Navigation */
-        header {"longlogo.png"
-            background-color: #ffebeb;
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #4f2800;
-        }
+       <!-- Header Section -->
+<header style="background-color:#ffebeb; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #4f2800;">
 
-        .logo img {"mainlogo.png"
-            height: 60px;
-            border-radius: 10px;
-        }
+  <!-- Main logo as clickable home button -->
+  <a href="index.html" style="display:flex; align-items:center;">
+    <img src="mainlogo.png" alt="Home" style="height:60px; border-radius:10px;">
+  </a>
 
-        nav a {
-            margin-left: 20px;
-            font-weight: bold;
-        }
+  <!-- Horizontal long logo centered -->
+  <div style="flex-grow:1; text-align:center;">
+    <img src="longlogo.png" alt="Cup of Intuition" style="max-width:600px; height:auto;">
+  </div>
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+</header>
+
 
         /* Hero Section */
         .hero {
