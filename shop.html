@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop - Cup of Intuition</title>
+    <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet">
+    <style>
+        /* Same CSS as index.html */
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background-color: #ffebeb;
+            color: #4f2800;
+            line-height: 1.6;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'The Seasons', cursive;
+            text-align: center;
+            margin-top: 1em;
+        }
+        a { color: #4f2800; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        header {
+            background-color: #ffebeb;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #4f2800;
+            flex-wrap: wrap;
+        }
+        .home-logo img { height: 60px; border-radius: 10px; }
+        .long-logo { flex-grow: 1; text-align: center; }
+        .long-logo img { max-width: 600px; height: auto; }
+        nav { display: flex; gap: 15px; align-items: center; justify-content: center; margin-top: 10px; flex-basis: 100%; }
+        nav a { font-weight: bold; color: #4f2800; }
+        nav a:hover { text-decoration: underline; }
+
+        section { max-width: 900px; margin: 2em auto; padding: 0 20px; }
+
+        .shop-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        .shop-item { background-color: #fff0f0; padding: 20px; border: 1px solid #4f2800; border-radius: 10px; text-align: center; width: 200px; }
+
+        footer { text-align: center; padding: 20px; border-top: 2px solid #4f2800; margin-top: 2em; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="home-logo">
+            <a href="index.html"><img src="mainlogo.png" alt="Home"></a>
+        </div>
+        <div class="long-logo">
+            <img src="longlogo.png" alt="Cup of Intuition">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="https://cupofintuition.substack.com/" target="_blank">Blog</a>
+        </nav>
+    </header>
+
+    <!-- Shop Content -->
+    <section>
+        <h1>Shop</h1>
+        <div class="shop-links">
+            <div class="shop-item">Soap - Coming Soon</div>
+            <div class="shop-item">Oils - Coming Soon</div>
+            <div class="shop-item">Other Creations - Coming Soon</div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Cup of Intuition
+    </footer>
+</body>
+</html>
